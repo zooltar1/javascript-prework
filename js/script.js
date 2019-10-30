@@ -64,6 +64,9 @@ function displayResult(argComputerMove, argPlayerMove){
     else if( argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
         return 'Tym razem przegrywasz :(';
     }
+    else if(argPlayerMove == 'nieznany ruch'){
+        return 'Błędny ruch, spróbuj ponownie!';
+    }
 }
 
 printMessage(displayResult(argComputerMove, argPlayerMove));
