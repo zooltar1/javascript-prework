@@ -2,11 +2,14 @@
 function getMoveName(argMoveId){
     if(argMoveId == 1){
         return 'kamień';
-    } else if(argMoveId == 2){
+    } 
+    else if(argMoveId == 2){
         return 'papier';
-    } else if(argMoveId == 3){
+    } 
+    else if(argMoveId == 3){
         return 'nożyce';
-    } else {
+    } 
+    else {
         printMessage('Nie znam ruchu o id ' + argMoveId + '.');
         return 'nieznany ruch';
     }
@@ -31,6 +34,7 @@ let argComputerMove = getMoveName(randomNumber);
 //gameResult
   
 function displayResult(argComputerMove, argPlayerMove){
+    console.log('moves:', argComputerMove, argPlayerMove);
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
  
     if( argComputerMove == 'kamień' && argPlayerMove == 'papier'){
@@ -62,6 +66,9 @@ function displayResult(argComputerMove, argPlayerMove){
     }
 }
 
-let result = displayResult(argComputerMove, argPlayerMove);
-printMessage(result);
+printMessage(displayResult(argComputerMove, argPlayerMove));
+
+
+
+
 
