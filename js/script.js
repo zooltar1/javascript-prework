@@ -83,3 +83,14 @@ document.getElementById('play-paper').addEventListener('click', function(){
 document.getElementById('play-scissors').addEventListener('click', function(){
     playGame(3);
 });
+
+let win = 0;
+let playerWin = playerResult();
+
+function playerResult(){
+    if (document.getElementById('messages') == 'Ty wygrywasz!') {
+        win = win + 1;
+    }
+}
+
+printResult(playerWin);
