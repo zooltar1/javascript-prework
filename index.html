@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Kamień, papier, nożyce</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100&display=swap" rel="stylesheet">
+    <link href="http://pl.allfont.net/allfont.css?fonts=montserrat-hairline" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,18 +36,17 @@
             <div class="result-inner">
                 <h1>Win counter:</h1>
                     <div class="boxes">
-                        <div class="boxes-inner">
-                            <div class="box-left">
-                                <h3>Player</h3> 
-                                <div id="result-player">
-                                </div>
+                        <div class="box">
+                            <h3>Player</h3> 
+                            <div id="result-player">
                             </div>
                         </div>
-                        <div class="boxes-inner">
-                            <div class="box-right">
-                                <h3>Computer</h3>
-                                <div id="result-computer">
-                                </div>
+                        <div class="box">
+                                <button class="btn-reset" onclick="window.location.reload();">reset</button>
+                        </div>
+                        <div class="box">
+                            <h3>Computer</h3>
+                            <div id="result-computer">
                             </div>
                         </div>
                     </div>
