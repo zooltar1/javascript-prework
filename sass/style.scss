@@ -118,12 +118,21 @@ header h3 {
     border: none;
     font-family: $font-main;
     font-weight: 700;
+    -moz-outline: none;
+    outline: none;
 }
 
 .game .game-inner .container .btn:hover {
     background-color: $color-gold;
     transition: 0.5s;
     color: $color-black;
+    -moz-outline: none;
+    outline: none;
+}
+
+.game .game-inner .container .btn:focus {
+    outline: none;
+    -moz-outline: none;
 }
 
 .game .moves, .messages {
@@ -218,12 +227,21 @@ header h3 {
     color: $color-light;
     font-weight: 400;
     margin-top: 10px;
+    outline: none;
+    -moz-outline: none;
 }
 
 .result .result-inner .boxes .box .btn-reset:hover {
     background-color: $color-gold;
     color: $color-black;
     transition: 0.5s;
+    outline: none;
+    -moz-outline: none;
+}
+
+.result .result-inner .boxes .box .btn-reset:focus {
+    outline: none;
+    -moz-outline: none;
 }
 
 .result .result-inner .boxes .result-player {
