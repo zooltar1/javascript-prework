@@ -97,3 +97,11 @@ document.getElementById('play-scissors').addEventListener('click', function(){
     playGame(3);
 });
 
+document.getElementById('reset').addEventListener('click', function(){
+    playerWin = 0;
+    computerWin = 0;
+    clearMessages(document);
+    clearMoves(document);
+    clearResultPlayer(document);
+    clearResultComputer(document);
+});

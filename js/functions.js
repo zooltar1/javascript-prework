@@ -10,6 +10,18 @@ function clearMessages(){
     document.getElementById('messages').innerHTML = '';
 }
 
+function clearMoves(){
+    document.getElementById('moves').innerHTML = '';
+}
+
+function clearResultPlayer(){
+    document.getElementById('result-player').innerHTML = '';
+}
+
+function clearResultComputer(){
+    document.getElementById('result-computer').innerHTML = '';
+}
+
 function printResultPlayer(msg){
     document.getElementById('result-player').innerHTML = msg;
 }
