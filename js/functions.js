@@ -1,15 +1,19 @@
 function printMessage(msg){
-    var div = document.createElement('div');
-    div.innerHTML = msg;
-    document.getElementById('messages').appendChild(div);
+    document.getElementById('messages').innerHTML = msg;
+}
+
+function printMoves(msg){
+    document.getElementById('moves').innerHTML = msg;
 }
 
 function clearMessages(){
     document.getElementById('messages').innerHTML = '';
 }
 
-function printResult(msg){
-    var div = document.createElement('div');
-    div.innerHTML = msg;
-    document.getElementById('result').appendChild(div);
+function printResultPlayer(msg){
+    document.getElementById('result-player').innerHTML = msg;
+}
+
+function printResultComputer(msg){
+    document.getElementById('result-computer').innerHTML = msg;
 }

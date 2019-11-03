@@ -3,24 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Kamień, papier, nożyce</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        <h1 class="title">welcome to the world of</h1>
-        <h3 class="subtitle">Rock, paper and scissors!</h3>
-        <div id="buttons">
-            <p>Chose Your move:</p>
-            <button class="btn" id="play-rock">Rock</button>
-            <button class="btn" id="play-paper">Paper</button>
-            <button class="btn" id="play-scissors">Scissors</button>
-        </div>
-        <div id="messages">
-
-        </div>
-        <div id="result">
-            
-        </div>
+        <header>
+            <h1 class="title">Welcome to the world of</h1>
+            <h3 class="subtitle">Rock, paper and scissors!</h3>
+        </header>
+        <section class="game">
+            <p>Choose Your move:</p>  
+            <div id="buttons">
+                <div class="container-outer container-1">
+                    <button class="btn" id="play-rock">Rock</button>
+                </div>
+                <div class="container-outer container-2">
+                    <button class="btn" id="play-paper">Paper</button>
+                </div>
+                <div class="container-outer container-3">
+                    <button class="btn" id="play-scissors">Scissors</button>
+                </div>
+            </div>
+            <div id="moves">
+            </div>
+            <div id="messages">
+            </div>
+        </section>
+        <section class="result">
+            <div class="result-inner">
+                <h1>Win counter:</h1>
+                    <div class="boxes">
+                        <div class="boxes-inner">
+                            <div class="box-left">
+                                <h3>Player</h3> 
+                                <div id="result-player">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxes-inner">
+                            <div class="box-right">
+                                <h3>Computer</h3>
+                                <div id="result-computer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
     </div>
     <script src="js/functions.js"></script>
     <script src="js/script.js"></script>

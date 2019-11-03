@@ -1,0 +1,212 @@
+$color-light: #ffffff;
+$color-blue: #004688;
+$color-grey: #919191;
+
+$font-main: 'Montserrat', sans-serif;
+
+body {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.container header {
+    height: 25vh;
+    width: auto;
+    background-color: $color-blue;
+    color: $color-light;
+    z-index: 1;
+}
+
+
+.container header h1 {
+    padding-top: 50px;
+    
+    font-family: $font-main;
+    font-size: 86px;
+    font-weight: 100;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.container header h3 {
+    font-family: $font-main;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0;
+    padding-top: 0;
+}
+
+/* Game */
+
+.container .game {
+    
+    background-color: $color-grey;
+    height: 55vh;
+    border: 1px solid $color-grey;
+}
+
+.container .game p {
+    color: $color-light;
+    font-family: $font-main;
+    font-size: 40px;
+    font-style: italic;
+    padding: 20px 0 15px 0;
+    margin: 0;
+}
+
+.container .game #buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.container-1, .container-2, .container-3 {
+    width: 300px;
+    height: 300px;   
+}
+
+.container-1 {
+    background-image: url("/images/rock.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.container-2 {
+    background-image: url("/images/paper.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-3 {
+    background-image: url("/images/scissors.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 65px;
+}
+
+.container .game #buttons .container-outer {
+    position: relative;
+}
+
+.container .game #buttons .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 86px;
+    height: 86px;
+    background-color: $color-blue;
+    border-radius: 50%;
+    color: $color-light;
+    border: none;
+    opacity: 0.65;
+}
+
+.container .game #moves, #messages {
+    padding-top: 10px;
+    color: $color-light;
+    font-family: $font-main;
+    font-size: 25px;
+}
+
+/* Result */
+
+.container .result {
+    height: 20vh;
+    background-color: $color-grey;
+    color: $color-light;
+    border: 1px solid $color-grey;
+}
+
+.container .result .result-inner {
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 25px;
+    position: relative;
+}
+
+.container .result .result-inner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-blue;
+    opacity: 0.4;
+    z-index: 1;
+    border-radius: 25px; 
+}
+
+.container .result .result-inner h1 {
+    z-index: 10;
+    position: relative;
+    margin: 0;
+    padding: 20px 0 20px 0;
+    font-family: $font-main;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.07px;
+}
+
+.container .result .result-inner .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .result .result-inner .boxes .boxes-inner {
+    width: 100%;
+    position: relative;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.container .result .result-inner .boxes .boxes-inner h3 {
+    opacity: 0.6;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+    padding: 10px 0 5px 0;
+}
+
+.container .result .result-inner .boxes .boxes-inner .box-left {
+    width: 50%;
+    position: relative;
+    z-index: 25;
+    margin: 0;
+    padding: 0 0 10px 20px;
+}
+
+.container .result .result-inner .boxes .boxes-inner .box-right {
+    width: 50%;
+    float: right;
+    position: relative;
+    z-index: 20;
+    margin: 0;
+    padding: 0 20px 10px 0;
+}
+
+.container .result .result-inner .boxes .boxes-inner #result-player {
+    font-family: $font-main;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.07px;
+}
+
+.container .result .result-inner .boxes .boxes-inner #result-computer {
+    font-family: $font-main;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.07px;
+}
