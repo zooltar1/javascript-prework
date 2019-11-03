@@ -2,57 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Kamień, papier, nożyce</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100&display=swap" rel="stylesheet">
-    <link href="http://pl.allfont.net/allfont.css?fonts=montserrat-hairline" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 class="title">Welcome to the world of</h1>
-            <h3 class="subtitle">Rock, paper and scissors!</h3>
-        </header>
-        <section class="game">
-            <p>Choose Your move:</p>  
-            <div id="buttons">
-                <div class="container-outer container-1">
-                    <button class="btn" id="play-rock">Rock</button>
-                </div>
-                <div class="container-outer container-2">
-                    <button class="btn" id="play-paper">Paper</button>
-                </div>
-                <div class="container-outer container-3">
-                    <button class="btn" id="play-scissors">Scissors</button>
-                </div>
+    <header>
+        <h1 class="title">Welcome to the world of</h1>            
+        <h3 class="subtitle">Rock, paper and scissors!</h3>
+    </header>
+    <section class="game">
+        <h3>Choose Your move:</h3>  
+        <div class="game-inner" id="buttons">
+            <div class="container" id="container-1">
+                <button class="btn" id="play-rock">Rock</button>
+           </div>
+            <div class="container" id="container-2">
+                <button class="btn" id="play-paper">Paper</button>
             </div>
-            <div id="moves">
+            <div class="container" id="container-3">
+                <button class="btn" id="play-scissors">Scissors</button>
             </div>
-            <div id="messages">
-            </div>
-        </section>
-        <section class="result">
-            <div class="result-inner">
-                <h1>Win counter:</h1>
-                    <div class="boxes">
-                        <div class="box">
-                            <h3>Player</h3> 
-                            <div id="result-player">
-                            </div>
-                        </div>
-                        <div class="box">
-                                <button class="btn-reset" onclick="window.location.reload();">reset</button>
-                        </div>
-                        <div class="box">
-                            <h3>Computer</h3>
-                            <div id="result-computer">
-                            </div>
-                        </div>
+        </div>
+        <div class="moves" id="moves">
+        </div>
+        <div class="messages" id="messages">
+        </div>
+    </section>
+    <section class="result">
+        <div class="result-inner">
+            <h3>Win counter:</h3>
+            <div class="boxes">
+                <div class="box">
+                    <h3>Player</h3> 
+                    <div class="result-player" id="result-player">
                     </div>
+                </div>
+                <div class="box">
+                    <button class="btn-reset" onclick="window.location.reload();">reset</button>
+                </div>
+                <div class="box">
+                    <h3>Computer</h3>
+                    <div class="result-computer" id="result-computer">
+                    </div>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contact">
+            <a href="#">All rights reserved&#x24B8;DoubleYouWeb</a>
+        </div>
+    </footer>
     <script src="js/functions.js"></script>
     <script src="js/script.js"></script>
 </body>
