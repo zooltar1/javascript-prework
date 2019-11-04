@@ -270,4 +270,69 @@ footer .contact a {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
 }
+
+/* Media */
+@media (max-width: 576px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  /* Header */
+  header h1 {
+    font-size: 50px;
+    padding-bottom: 10px;
+  }
+  header h3 {
+    font-size: 25px;
+  }
+  /* Game */
+  .game h3 {
+    font-size: 25px;
+  }
+  .game .game-inner .container {
+    width: 100px;
+    height: 100px;
+  }
+  .game .game-inner #container-3 {
+    background-position-x: center;
+  }
+  .game .game-inner .container .btn {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 86px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .game .moves {
+    padding: 50px 0 10px 0;
+    font-size: 20px;
+  }
+  .game .messages {
+    font-size: 20px;
+  }
+  /* Result */
+  .result {
+    padding: 0;
+  }
+  .result .result-inner {
+    width: 100%;
+  }
+  .result .result-inner::after {
+    border-radius: 0;
+  }
+  .result .result-inner h3 {
+    font-size: 25px;
+  }
+  .result .result-inner .boxes .box h3 {
+    font-size: 20px;
+  }
+  /* Footer */
+  footer .contact a {
+    padding: 20px 0 25px 0;
+    font-size: 20px;
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
