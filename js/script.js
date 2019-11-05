@@ -1,5 +1,7 @@
-let playerWin = 0;
-let computerWin = 0;
+{
+
+let playerWin = 0,
+computerWin = 0;
 
 function playGame(playerInput){
     clearMessages();
@@ -24,15 +26,15 @@ function playGame(playerInput){
 
     console.log('Gracz wpisał: ' + playerInput);
 
-    let argPlayerMove = getMoveName(playerInput);
+    const argPlayerMove = getMoveName(playerInput);
 
     //computerMove
 
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
 
     console.log('Wylosowana liczba to:' + randomNumber);
 
-    let argComputerMove = getMoveName(randomNumber);
+    const argComputerMove = getMoveName(randomNumber);
 
     //gameResult
   
@@ -105,3 +107,5 @@ document.getElementById('reset').addEventListener('click', function(){
     clearResultPlayer(document);
     clearResultComputer(document);
 });
+
+}
