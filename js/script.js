@@ -1,7 +1,11 @@
 {
 
 let playerWin = 0,
-computerWin = 0;
+computerWin = 0,
+playRock = document.getElementById('play-rock'),
+playPaper = document.getElementById('play-paper'),
+playScissors = document.getElementById('play-scissors'),
+reset = document.getElementById('reset');
 
 function playGame(playerInput){
     clearMessages();
@@ -86,20 +90,20 @@ function playGame(playerInput){
 
 }
 
-document.getElementById('play-rock').addEventListener('click', function(){
+playRock.addEventListener('click', function(){
     playGame(1);
   
 });
 
-document.getElementById('play-paper').addEventListener('click', function(){
+playPaper.addEventListener('click', function(){
     playGame(2);
 });
 
-document.getElementById('play-scissors').addEventListener('click', function(){
+playScissors.addEventListener('click', function(){
     playGame(3);
 });
 
-document.getElementById('reset').addEventListener('click', function(){
+reset.addEventListener('click', function(){
     playerWin = 0;
     computerWin = 0;
     clearMessages(document);
